@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      ClassRoom
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="/css/room.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body onload="initPeer()">
+    <div id="loadingDiv">
+    </div>
+
+    <div id="Buttons">
+      <button id="shareRoomBtn" class="fas fa-users"></button>
+      <button id="audioBtn" class="fas fa-microphone"></button>
+      <button id="videoBtn" class="fas fa-video"></button>
+      <button id="screenShareBtn" class="fas fa-desktop"></button>
+      <button id="fileShareBtn" class="fa fa-files-o"></button>
+      <button id="leaveRoomBtn" class="fas fa-phone-slash"></button>
+    </div>
+
+
+    <script
+      src="https://kit.fontawesome.com/d2f1016e6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://cdn.rawgit.com/muaz-khan/DetectRTC/master/DetectRTC.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/emoji-picker-element@1"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/home.js"></script>
+    </body>
+</html>
